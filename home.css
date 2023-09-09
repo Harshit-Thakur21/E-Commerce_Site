@@ -1,0 +1,373 @@
+body{
+    margin:0;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+    a{
+    text-decoration: none;
+    color:black;
+}
+.navbar,ul{
+    display:flex;
+    justify-content: space-between;
+
+   
+}
+li{
+    padding: 17px 20px;
+    margin-right:20px;
+}
+.compname{
+    padding-left: 20px;
+    font-size: 25px;
+   font-weight: 700;
+}
+.navbar{
+    top:0;
+    background-color: rgba(237, 231, 223, 0.193);
+    position: fixed;
+    width: 100vw;
+    
+  
+}
+.navbar span{
+    font-size:17px;
+}
+
+.navbar a{
+    color: #fff;
+}
+
+.div1{
+    display:flex;
+    
+   margin:7%;
+   justify-content: space-around;
+   flex-wrap: wrap;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+   gap:500px;
+}
+.div2{
+    display: flex;
+    
+        margin: 7%;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        text-align: center;
+        gap:50px;
+}
+
+.div1content{
+    font-size:40px;
+}
+.div1content span{
+    font-size:130%;
+    font-weight: bolder;
+}
+.div1 .gif{
+    float:right;
+    height:350px;
+}
+.div1 p{
+    margin-top: 80px;;
+}
+.div1content .play{
+    height: 50%;
+    width:70px;
+}
+.div1 button{
+    padding-top: 20px;
+    background-color:white;
+    border: none;
+    text-decoration: none;
+
+}
+.apple{
+    height:50%;
+    width:60px;
+    padding-bottom: 10px;
+}
+.div2 video{
+   
+    float:left;
+    height:350px;
+    border: none;
+    
+    
+}
+.serum{
+    border-radius: 190px;
+}
+
+/*.div2 .div1content{
+    margin-right: 130px;
+    padding-top:50px;
+}
+.div2{
+    justify-content: space-evenly;
+}*/
+
+.div3{
+    margin:20%;
+}
+.div3 video{
+   
+    float:left;
+    height:350px;
+    
+    
+}
+.div3 .div1content{
+    margin-right: 130px;
+    padding-top:50px;
+}
+.div3{
+    justify-content: space-evenly;
+}
+.div4{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin:5%;
+    text-align: center;
+    font-size:130%;
+    font-weight: 600;
+ 
+
+}
+.div4 img{
+    width:100px;
+    height:100px;
+
+}
+
+.div4 div{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+    padding: 100px;
+   
+}
+
+
+
+ p{
+    animation: cute 4s ease-in .3s  alternate;
+    position: relative;
+
+
+ }
+ @keyframes cute 
+ {
+    from{
+        color: white;
+     background-color: white;
+        
+    }
+    to{
+    
+    }
+
+    
+ }
+ .play,.apple,.div2 img ,.div3 img ,.div4 img ,.div5 img{
+    position: relative;
+    animation: zoom 3s .3s 1  alternate;
+ }
+ @keyframes zoom{
+    from{
+        height:0;
+        width:0;
+    }
+    to{
+        transform: rotate(360deg);
+        transition-duration:2s ;
+    }
+ }
+ iframe{
+    position: relative;
+ }
+ .play:hover,.apple:hover,.div2 img:hover ,.div3 img:hover ,.div4 img:hover ,.div5 img:hover{
+    transform: rotate(360deg);
+    transition-duration:2s ;
+ }
+ .navbar{
+    transition: background-color 1s ease-in 2s;
+    background-color: rgba(237, 231, 223, 0.193) ;
+ }
+p{
+    visibility: hidden;
+    transition: all 2s ease-in 1s;
+    visibility: visible;
+ }
+
+
+
+
+.head{
+    font-size: 40px;
+}
+
+@media screen and (max-width:1000px)
+ {
+    .div1content{
+    font-size:25px;  
+}
+.spons img{
+   height: 0;
+   width:0;
+   
+}
+.spons .div1content{
+    font-size:18px;
+}
+.spons span{
+    font-size: 20px;
+}
+.navbar li{
+    display: none;
+}
+img{
+    width:300px;
+    height:300px;
+}
+video{
+    width:300px;
+    height:300px;
+}
+.div4{
+    padding:0;
+    margin:0;
+   
+}
+.div4 div{
+    padding :50px;
+}
+.div4 div img{
+    height: 60px;
+    width:60px;
+    padding: 0px;
+}
+.div1content{
+   
+    text-align: center;
+}
+.div5 video{
+    height:250px;
+    width:250px;
+    padding: 0 10%;
+}
+ }
+ .div5{
+display: flex;
+
+margin:7%;
+flex-wrap: wrap;
+justify-content: space-around;
+align-items: center;
+ }
+ .div5 video{
+    float:right;
+    height: 500px;
+    width:500px;
+   
+ }
+ .div5 p
+ {
+    text-align: center;
+    padding:10%;
+
+ }
+.div4 span{
+    display: block;
+    font-size:28px;
+}
+
+.spons{
+    display: flex;
+    justify-content: space-around;
+    margin:7%;
+    flex-direction: column;
+}
+.spons img{
+    display: block;
+    margin: auto;
+    border-radius: 50px;
+}
+.spons .div1content{
+    font-family:lobster;
+    font-style: italic;
+    font-size:25px;
+    font-weight: 500;
+    text-align: center;
+    padding: 0 20%;
+  
+}
+.spons span{
+    font-family:lobster;
+    font-style: italic;
+    font-size:30px;
+    float:right;
+    padding:0 20%
+}
+.div6{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.spons div{
+    padding-bottom: 100px;
+}
+.div7{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.div5 video{
+    height:350px;
+}
+.play , .apple{
+    height:50px;
+    width:50px;
+}
+.div1 .main{
+    background-color: black;
+    color: #fff;
+    font-size: 30px;
+    display: flex;
+    text-align: center;
+    border-radius: 29px;
+    padding:20px;
+    margin:auto;
+    font-family: play;
+    margin-top: 10px;
+}
+.special{
+    border-radius: 5px;
+    background-color: black;
+}
+.contact {
+    height:50vh;
+    width:100vw;
+    background-color: black;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact .heading{
+    font-family: play;
+}
+.contact li{
+    list-style: none;
+}
+
+.navbar p span{
+    font-size: x-large;
+    font-weight: 600;
+}
+.main a{
+    color: #fff;
+    background-color: black;
+}
